@@ -137,7 +137,7 @@ def get_products():
 
 # CART 
 @application.route('/api/cart/add/<int:product_id>', methods=['POST'])
-@login_required
+@login_required 
 def add_to_cart(product_id):
     user = User.query.get(int(current_user.id))
     product = Product.query.get(product_id)
