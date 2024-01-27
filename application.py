@@ -134,7 +134,7 @@ def get_products():
         items.append(item)
 
     return jsonify({"Products": items})
- 
+
 # CART 
 @application.route('/api/cart/add/<int:product_id>', methods=['POST'])
 @login_required
